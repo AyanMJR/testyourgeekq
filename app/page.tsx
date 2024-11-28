@@ -1,4 +1,6 @@
 import { Button3D, Typography } from "@/common/components/atoms";
+import { Arrow } from "@/common/components/icons/Arrow";
+import { GoogleSignIn } from "@/common/components/molecules";
 import { homepage } from "@/common/constant/staticText";
 
 export default function Home() {
@@ -16,12 +18,12 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center">
-        <div className="mb-8">
-          <Button3D label={homepage.signIn} />
+      <div className="flex flex-col gap-12 justify-self-center justify-center items-center w-1/2 max-w-60">
+        <div className="self-stretch">
+          <GoogleSignIn />
         </div>
-        <div>
-          <Button3D label={homepage.guestButton} />
+        <div className="self-stretch">
+          <Button3D icon={<Arrow />} label={homepage.guestButton} />
         </div>
       </div>
     </div>
