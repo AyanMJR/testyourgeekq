@@ -1,4 +1,4 @@
-import { SVGProps } from "react"
+import { SVGProps } from "react";
 
 export const Spinner = (props: SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} {...props}>
@@ -13,4 +13,4 @@ export const Spinner = (props: SVGProps<SVGSVGElement>) => (
       <circle cx={18.36} cy={5.64} r={2} />
     </g>
   </svg>
-)
+);

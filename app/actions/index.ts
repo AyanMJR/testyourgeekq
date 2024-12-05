@@ -1,1 +1,1 @@
-export { googleSignIn } from './googleSignIn';
+export { googleSignIn } from "./googleSignIn";

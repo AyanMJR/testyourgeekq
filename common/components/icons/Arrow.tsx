@@ -14,4 +14,4 @@ export const Arrow = (props: SVGProps<SVGSVGElement>) => (
       d="m13.074 16.95-1.414-1.414L14.196 13H2v-2h12.196L11.66 8.465l1.414-1.415 4.95 4.95-4.95 4.95Z"
     />
   </svg>
-)
+);
