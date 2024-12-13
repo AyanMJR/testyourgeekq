@@ -1,20 +1,17 @@
 "use client";
-import { googleSignIn } from "@/app/actions";
 import { Button3D } from "@/common/components/atoms";
 import { homepage } from "@/common/constant/staticText";
-import { useActionState } from "react";
 import { Google } from "@/common/components/icons";
+import { useFormStatus } from "react-dom";
 
 export const GoogleSignIn = () => {
-  const [user, formAction, isPending] = useActionState(googleSignIn, false);
+  const { pending } = useFormStatus();
   return (
-    <form action={formAction}>
-      <Button3D
-        label={homepage.signIn}
-        type="submit"
-        loading={isPending}
-        icon={<Google />}
-      />
-    </form>
+    <Button3D
+      label={homepage.signIn}
+      type="submit"
+      loading={pending}
+      icon={<Google />}
+    />
   );
 };

@@ -2,6 +2,7 @@ import { Button3D, Typography } from "@/common/components/atoms";
 import { Arrow } from "@/common/components/icons/Arrow";
 import { GoogleSignIn } from "@/common/components/molecules";
 import { homepage } from "@/common/constant/staticText";
+import { googleSignIn } from "./actions";
 
 export default function Home() {
   return (
@@ -20,7 +21,9 @@ export default function Home() {
       </div>
       <div className="flex flex-col gap-12 justify-self-center justify-center items-center w-1/2 max-w-60">
         <div className="self-stretch">
-          <GoogleSignIn />
+          <form action={googleSignIn}>
+            <GoogleSignIn />
+          </form>
         </div>
         <div className="self-stretch">
           <Button3D icon={<Arrow />} label={homepage.guestButton} />

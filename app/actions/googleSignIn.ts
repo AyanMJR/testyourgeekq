@@ -3,6 +3,5 @@
 import { signIn } from "@/auth";
 
 export async function googleSignIn() {
-  await signIn("google");
-  return true;
+  await signIn("google", { redirectTo: "/play" });
 }
