@@ -1,8 +1,8 @@
-import { Button3D, Typography } from "@/common/components/atoms";
-import { Arrow } from "@/common/components/icons/Arrow";
-import { GoogleSignIn } from "@/common/components/molecules";
+import { Typography } from "@/common/components/atoms";
+import { GoogleSignIn, GuestSignIn } from "@/common/components/molecules";
 import { homepage } from "@/common/constant/staticText";
 import { googleSignIn } from "./actions";
+import { guestSignIn } from "./actions/googleSignIn";
 
 export default function Home() {
   return (
@@ -26,7 +26,9 @@ export default function Home() {
           </form>
         </div>
         <div className="self-stretch">
-          <Button3D icon={<Arrow />} label={homepage.guestButton} />
+          <form action={guestSignIn}>
+            <GuestSignIn />
+          </form>
         </div>
       </div>
     </div>
