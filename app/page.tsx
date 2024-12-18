@@ -10,10 +10,16 @@ export default function Home() {
       <div className="bg-background-900">
         <div className="flex justify-center items-center h-[100%]">
           <div>
-            <Typography variant={"i"} classes="text-white font-semibold">
+            <Typography
+              variant={"i"}
+              classes="text-white font-semibold"
+            >
               {homepage.quote}
             </Typography>
-            <Typography variant={"p"} classes="text-white text-left">
+            <Typography
+              variant={"p"}
+              classes="text-white text-left"
+            >
               -{homepage.author}
             </Typography>
           </div>
