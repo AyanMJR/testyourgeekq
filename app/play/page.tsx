@@ -1,5 +1,10 @@
-import { ChessBoard } from "@/common/components/atoms";
+import { Background } from "@/common/components/atoms";
+import { Levels } from "@/common/components/molecules";
 
-export default function Play() {
-  return <ChessBoard />;
+export default async function Play() {
+  return (
+    <Background>
+      <Levels />
+    </Background>
+  );
 }
