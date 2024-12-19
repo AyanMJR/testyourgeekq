@@ -14,6 +14,9 @@ export default {
         },
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        rubik: ["var(--font-rubik)"],
+      },
     },
   },
   plugins: [],

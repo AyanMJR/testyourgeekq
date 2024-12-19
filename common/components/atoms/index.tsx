@@ -4,3 +4,4 @@ export { ChessBoard } from "./ChessBoard";
 export { Background } from "./Background";
 export { DungeonTile } from "./DungeonTile";
 export { ButtonIcon } from "./ButtonIcon";
+export { LockOverlay } from "./LockOverlay";
